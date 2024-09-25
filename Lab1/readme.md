@@ -103,11 +103,10 @@
 
 ## Составление HTTP-запросов.
 
-2<br>
+Пункт 2 <br>
 1. GET / HTTP/1.1<br>
 HOST: http://sandbox.com<br>
 User-Agent: Turturica Ilia<br>
-
 
 2. POST /cars HTTP/1.1 <br>
 HOST: http://sandbox.com <br>
@@ -118,7 +117,6 @@ Content-Type: application/json <br>
 "model" : "Corolla",<br>
 "year": "2020"<br>
 }<br>
-
 
 3. PUT /cars HTTP/1.1 <br>
 HOST: http://sandbox.com/cars/1<br>
