@@ -103,13 +103,12 @@
 
 ## Составление HTTP-запросов.
 
-2.1
-GET / HTTP/1.1
+2
+1. GET / HTTP/1.1
 HOST: http://sandbox.com
 User-Agent: Turturica Ilia
 
-2.2
-POST /cars HTTP/1.1
+2. POST /cars HTTP/1.1
 HOST: http://sandbox.com
 Content-Type: application/json
 
@@ -119,8 +118,7 @@ Content-Type: application/json
 "year": "2020"
 }
 
-2.3
-PUT /cars HTTP/1.1
+3. PUT /cars HTTP/1.1
 HOST: http://sandbox.com/cars/1
 User-Agent: Turturica Ilia
 Content-Type: application/json
@@ -131,8 +129,7 @@ Content-Type: application/json
 "year": "2021"
 }
 
-2.4
-POST /cars HTTP/1.1
+4. POST /cars HTTP/1.1
 Host: sandbox.com
 Content-Type: application/json
 User-Agent: John Doe
