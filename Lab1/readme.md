@@ -103,40 +103,37 @@
 
 ## Составление HTTP-запросов.
 
-2.1
-GET / HTTP/1.1
-HOST: http://sandbox.com
-User-Agent: Turturica Ilia
+Пункт 2 <br>
+1. GET / HTTP/1.1<br>
+HOST: http://sandbox.com<br>
+User-Agent: Turturica Ilia<br>
 
-2.2
-POST /cars HTTP/1.1
-HOST: http://sandbox.com
-Content-Type: application/json
+2. POST /cars HTTP/1.1 <br>
+HOST: http://sandbox.com <br>
+Content-Type: application/json <br>
 
-{
-"make" : "Toyota",
-"model" : "Corolla",
-"year": "2020"
-}
+{<br>
+"make" : "Toyota",<br>
+"model" : "Corolla",<br>
+"year": "2020"<br>
+}<br>
 
-2.3
-PUT /cars HTTP/1.1
-HOST: http://sandbox.com/cars/1
-User-Agent: Turturica Ilia
-Content-Type: application/json
+3. PUT /cars HTTP/1.1 <br>
+HOST: http://sandbox.com/cars/1<br>
+User-Agent: Turturica Ilia<br>
+Content-Type: application/json<br>
 
-{
-"make" : "Toyota",
-"model" : "Corolla",
-"year": "2021"
-}
+{ <br>
+"make" : "Toyota", <br>
+"model" : "Corolla", <br>
+"year": "2021" <br>
+} <br>
 
-2.4
-POST /cars HTTP/1.1
-Host: sandbox.com
-Content-Type: application/json
-User-Agent: John Doe
-model=Corolla&make=Toyota&year=2020
+4. POST /cars HTTP/1.1 <br>
+Host: sandbox.com <br>
+Content-Type: application/json <br>
+User-Agent: John Doe <br>
+model=Corolla&make=Toyota&year=2020 <br>
 
 Код 200 сработает в случае, если бы был произведён запрос с методом GET, который прошёл успешно.
 
