@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-link {
+    @apply text-sm text-center inline-block md:text-base lg:text-2xl hover:text-green-600 hover:border-b hover:border-green-700 hover:-translate-y-1 hover:transition-all duration-700;
+}
