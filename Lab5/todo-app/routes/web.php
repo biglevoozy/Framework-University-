@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/about', [HomeController::class, 'about'])->name('home.about');
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/user', [HomeController::class, 'user'])->name('home.user')->middleware('auth');
+;
 
 // Route::controller(TaskController::class)->prefix('task')->name('task.')->group(function () {
 //     Route::get('/', 'index')->name('index');

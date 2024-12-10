@@ -24,4 +24,9 @@ class HomeController extends Controller
     {
         return view('home.about');
     }
+
+    public function user()
+    {
+        return view('home.user');
+    }
 }

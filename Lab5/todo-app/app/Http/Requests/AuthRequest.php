@@ -26,11 +26,10 @@ class AuthRequest extends FormRequest
             'password' => ['required', 'string', 'min:3', 'regex:/[a-zA-Z]/'],
         ];
 
-        // if ($this->isMethod('post') && $this->routeIs('storeRegister')) {
-        //     $rules['name'] = 'required|string|max:255';
-        //     $rules['email'] .= '|unique:users,email';
-
-        // }
+        if ($this->isMethod('post') && $this->routeIs('storeRegister')) {
+            $rules['name'] = 'required|string|max:255';
+            $rules['email'] .= '|unique:users,email';
+        }
 
         return $rules;
     }
